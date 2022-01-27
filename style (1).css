@@ -1,0 +1,108 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: url("2.jpg");
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+nav{
+   display: flex;
+   padding: 3% 5%;
+   justify-content: space-between;
+   align-items: center;
+}
+nav h3{
+   color: white;
+   font-size: 25px;
+   font-family: sans-serif;
+   text-transform: uppercase;
+}
+
+.nav-menu{
+   flex: 1;
+   text-align: right;
+}
+.nav-menu ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0px 10px;
+   position: relative;
+}
+
+.nav-menu ul li a{
+   text-decoration: none;
+   color: wheat;
+   font-size: 15px;
+   text-transform: uppercase;
+}
+.nav-menu ul li ::after{
+   content: '';
+   width: 0px;
+   height: 3px;
+   background: red;
+   display: block;
+   margin: auto;
+   position: absolute;
+   bottom: -5px;
+   transition:.5s;
+}
+
+.nav-menu ul li :hover::after{
+   width: 50px;
+   }
+   
+   
+  .p-img{
+     width: 40%;
+     position: absolute;
+     top: 20%;
+     left: 60%;
+     transform: translate(25% -24%);
+  }
+  
+ .title{
+    width: 80%; 
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+ .title h1{
+    font-size: 60px;
+ }
+.title p{
+   margin: 10px 0 40px;
+   font-size: 30px;
+   color: gold;
+}
+
+.title a{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 2px solid yellow;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+   padding: 13px 30px;
+   font-size: 18px;
+}
+
+.title :hover{
+   background: red;
+   border: 2px solid black;
+   transition: 2s;
+}
+
+.p-img{
+   position: absolute;
+   size: 10%;
+}
